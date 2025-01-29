@@ -8,22 +8,28 @@
 body {
     background: #39297d;
     color: #fff;
+    background-image: url("/Images/main-bg.jpg");
+    background-size: cover;
 }
 
 h1 {
     text-align: center;
-    margin: 100px auto 50px;
+    margin: 20px auto 50px;
     font-weight: 600;
+    color: #fff;
+    background-color: #333;
+    opacity: 0.7;
+    padding: 10px;
+    letter-spacing: 3px;
 }
 
 form {
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 900px;
     margin: auto;
-    height: 80px;
-    background: #434989;
+    height: 50px;
+    /* background: #434989; */
     display: flex;
-    align-items: center;
     border-radius: 8px;
 }
 
@@ -36,29 +42,45 @@ form input {
     color: #fff;
     font-size: 18px;
     padding: 0 30px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50px 0 0 50px ;
+    opacity: 0.7;
 }
 
 form button {
     padding: 0 40px;
     height: 100%;
-    background: #372c48;
-    color: #fff;
     font-size: 18px;
     border: 0;
     outline: 0;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
     cursor: pointer;
+    background-color: white;
+}
+
+form button:hover {
+    opacity: 0.7;
+    border-radius: 50px;
+}
+
+form button:active {
+    opacity: 1;
 }
 
 ::placeholder {
-    color: #fff;
+    color: #333;
     font-size: 18px;
+    letter-spacing: 2px;
 }
 
 #show-more-btn {
-    background: #372c48;
+    background: black;
     color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
     border: 0;
     outline: 0;
     padding: 10px 20px;
@@ -66,14 +88,26 @@ form button {
     margin: 10px auto 100px;
     cursor: pointer;
     display: none;
+    border: 1px solid white;
+}
+
+#show-more-btn:hover {
+    background-color: #d6cbcb;
+    color: #332929;
+}
+
+#show-more-btn:active {
+    background: black;
+    color: #fff;
+    border: 1px solid white;
 }
 
 #search-result{
-    width: 80%;
+    width: 98%;
     margin: 100px auto 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
 #search-result img {
@@ -81,4 +115,5 @@ form button {
     height: 230px;
     object-fit: cover;
     background-color: 5px;
+    border-radius: 10px;
 }

@@ -8,7 +8,7 @@
 body {
     background: #39297d;
     color: #fff;
-    background-image: url("../Images/main-bg.jpg");
+    background-image: url("./Images/main-bg.jpg");
     background-size: cover;
 }
 
